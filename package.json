@@ -48,6 +48,8 @@
     "url": "https://github.com/xiaoxian521"
   },
   "dependencies": {
+    "@codingame/monaco-vscode-api": "^11.0.1",
+    "@guolao/vue-monaco-editor": "^1.5.4",
     "@pureadmin/descriptions": "^1.2.1",
     "@pureadmin/table": "^3.2.0",
     "@pureadmin/utils": "^2.4.8",
@@ -61,12 +63,14 @@
     "js-cookie": "^3.0.5",
     "localforage": "^1.10.0",
     "mitt": "^3.0.1",
+    "monaco-languageclient": "^8.8.3",
     "nprogress": "^0.2.0",
     "path": "^0.12.7",
     "pinia": "^2.2.2",
     "pinyin-pro": "^3.24.2",
     "qs": "^6.13.0",
     "responsive-storage": "^2.2.0",
+    "socket.io-client": "^4.8.1",
     "sortablejs": "^1.15.2",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3",
