@@ -3,7 +3,7 @@ import logging
 
 from typing import Union
 
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket
 from pylsp_jsonrpc import dispatchers, endpoint
 
 log = logging.getLogger(__name__)
@@ -88,7 +88,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 
 @app.websocket("/ws")
-async def websocket_endpoint(websocket):
+async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     while True:
         data = await websocket.receive_text()
