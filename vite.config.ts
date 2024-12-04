@@ -1,6 +1,7 @@
 import { getPluginsList } from "./build/plugins";
 import { include, exclude } from "./build/optimize";
 import { type UserConfigExport, type ConfigEnv, loadEnv } from "vite";
+import importMetaUrlPlugin from "@codingame/esbuild-import-meta-url-plugin";
 import {
   root,
   alias,
@@ -40,6 +41,12 @@ export default ({ mode }: ConfigEnv): UserConfigExport => {
     plugins: getPluginsList(VITE_CDN, VITE_COMPRESSION),
     // https://cn.vitejs.dev/config/dep-optimization-options.html#dep-optimization-options
     optimizeDeps: {
+      // for monaco-languageclient
+      // https://github.com/TypeFox/monaco-languageclient/blob/main/vite.config.ts#L57-L63
+      // https://github.com/TypeFox/monaco-languageclient/blob/main/vite.config.ts#L57-L63
+      esbuildOptions: {
+        plugins: [importMetaUrlPlugin]
+      },
       include,
       exclude
     },
