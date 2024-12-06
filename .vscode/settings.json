@@ -1,42 +1,13 @@
 {
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true,
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.tabSize": 2,
-  "editor.formatOnPaste": true,
-  "editor.guides.bracketPairs": "active",
-  "files.autoSave": "afterDelay",
-  "git.confirmSync": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.suggestSelection": "first",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "css.lint.propertyIgnoredDueToDisplay": "ignore",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
-  "files.associations": {
-    "editor.snippetSuggestions": "top"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, env.d.ts",
+    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll": "explicit"
   },
-  "iconify.excludes": [
-    "el"
-  ],
-  "vscodeCustomCodeColor.highlightValue": [
-    "v-loading",
-    "v-auth",
-    "v-copy",
-    "v-longpress",
-    "v-optimize",
-    "v-ripple"
-  ],
-  "vscodeCustomCodeColor.highlightValueColor": "#b392f0",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
