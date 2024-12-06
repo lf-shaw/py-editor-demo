@@ -1,6 +1,6 @@
 # monaco editor 测试
 
-**NOTE** vite 的资源加载问题参考 [这里](https://github.com/TypeFox/monaco-languageclient/issues/751#issuecomment-2371827837)
+> vite 的资源加载问题参考 [这里](https://github.com/TypeFox/monaco-languageclient/issues/751#issuecomment-2371827837)
 
 ## 开启 language server
 
